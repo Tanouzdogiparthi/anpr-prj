@@ -112,4 +112,4 @@ if __name__ == '__main__':
     httpd = simple_server.make_server(host, port, application)
     print("Serving on %s %d" % (host, port))
     httpd.serve_forever()
-    # application.run(host='0.0.0.0', port=port)
+    application.run(host='0.0.0.0', port=port)
