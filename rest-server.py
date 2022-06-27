@@ -47,7 +47,7 @@ def encodeImageIntoBase64(croppedImagePath):
     # return base64.b64encode(croppedImagePath)
 
 
-@application.route("/predict", methods=["POST"])
+@application.route("/predict", methods=["POST","GET"])
 def getPrediction():
     inpImage = request.json['image']
     decodeImageIntoBase64(inpImage, imagePath)
